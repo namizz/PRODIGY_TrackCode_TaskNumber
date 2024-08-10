@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  margin: 2px;
+}
+.top {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  margin: 0;
+  width: 98%;
+  height: clamp(10px, 6vw, 90px);
+  top: 0;
+}
+#left {
+  font-size: clamp(10px, 1.8vw, 25px);
+}
+#left,
+#right {
+  width: 50%;
+}
+#right > nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.home {
+  background-image: url("Picsart_24-08-05_15-17-25-955.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55vw;
+  margin: 0;
+  margin-top: clamp(50px, 3em, 90px);
+  font-size: clamp(10px, 2vw, 37px);
+  color: #fff;
+}
+.home h2,
+.home p {
+  width: 50%;
+  margin: 3vw;
+}
+h2 {
+  font-size: clamp(10px, 3vw, 50px);
+}
+h3 {
+  font-size: clamp(1.1em, 2.3vw, 45px);
+}
+.previous-work {
+  font-size: clamp(1.1rem, 1.5vw, 37px);
+  margin: 3vw;
+}
+.previous-work > #work1 {
+  margin-top: 2vw;
+  margin-left: -1vw;
+  display: flex;
+}
+#work1 img {
+  width: clamp(70vw, 40vw, 100px);
+  height: 13em;
+  object-fit: cover;
+}
+#work1 p,
+#work1 h3 {
+  padding: 2% 20% 0 2%;
+}
+#overview {
+  margin-top: 6vw;
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 5px;
+}
+#overview-text {
+  text-align: right;
+}
+#line {
+  border: 1px solid;
+}
+#center {
+  display: flex;
+  text-align: center;
+}
