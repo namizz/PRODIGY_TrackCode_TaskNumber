@@ -164,6 +164,14 @@ input {
   padding: 2px;
   padding-left: 2%;
 }
+#submit {
+  margin: 0;
+  font-size: 1em;
+  padding: 0.3em;
+  border-radius: 0;
+  color: #f9ffa1;
+  border: 1px outset #497e55;
+}
 
 .contact {
   background-color: #77a2ba;
