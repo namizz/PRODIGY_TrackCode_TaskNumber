@@ -2,30 +2,49 @@
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
-  margin: 2px;
+  margin: 0px;
 }
+
 .top {
   display: flex;
   position: fixed;
   justify-content: space-between;
-  margin: 0;
-  width: 98%;
+  width: 100%;
   height: clamp(10px, 6vw, 90px);
   top: 0;
+  background-color: #ffffff;
 }
-#left {
+.top > #left {
+  background: linear-gradient(90deg, #497e55, #164721);
   font-size: clamp(10px, 1.8vw, 25px);
+  color: #fff;
+  padding: 0.5vw 0 0 2vw;
 }
 #left,
 #right {
   width: 50%;
 }
-#right > nav > ul {
+
+ul,
+li a {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+  align-items: center;
+  font-size: clamp(10px, 1.9vw, 25px);
+  font-weight: 700;
+  color: #135622;
+  text-decoration: none;
+  margin-top: 0.3rem;
 }
+#Donate a {
+  border: 1px solid #1cc54160;
+  border-radius: 1.3rem;
+  padding: 0.6vw 1.2vw;
+  background: linear-gradient(120deg, #56a066 0%, #1d8534 90%, #1d8534 100%);
+  color: #efd80d;
+}
+
 .home {
   background-image: url("Picsart_24-08-05_15-17-25-955.jpg");
   background-size: cover;
@@ -33,23 +52,32 @@
   height: 55vw;
   margin: 0;
   margin-top: clamp(50px, 3em, 90px);
-  font-size: clamp(10px, 2vw, 37px);
+  font-size: clamp(10px, 2vw, 33px);
+  color: #fffcf4;
+}
+.home > h2 {
+  padding-top: 4vw;
   color: #fff;
+}
+.home > p > a {
+  color: #99ffa9;
 }
 .home h2,
 .home p {
   width: 50%;
-  margin: 3vw;
+  margin: 2vw 3vw;
 }
 h2 {
   font-size: clamp(10px, 3vw, 50px);
 }
 h3 {
-  font-size: clamp(1.1em, 2.3vw, 45px);
+  font-size: clamp(1.1em, 1.5vw, 30px);
 }
+
 .previous-work {
   font-size: clamp(1.1rem, 1.5vw, 37px);
   margin: 3vw;
+  color: #1d8534;
 }
 .previous-work > #work1 {
   margin-top: 2vw;
@@ -64,15 +92,29 @@ h3 {
 #work1 p,
 #work1 h3 {
   padding: 2% 20% 0 2%;
+  color: #186629;
 }
+#work1 p {
+  color: #000000;
+}
+p > span {
+  color: #006ed3;
+}
+
 #overview {
+  width: 85%;
+  margin: 0 auto;
   margin-top: 6vw;
-  border-radius: 10px;
+  border-radius: 25px;
   font-size: 0.8em;
   padding: 5px;
+  background-color: #e0e0e0;
+  color: #000000d5;
+  padding: 1.5vw;
 }
 #overview-text {
   text-align: right;
+  color: #682e2e;
 }
 #line {
   border: 1px solid;
@@ -80,4 +122,73 @@ h3 {
 #center {
   display: flex;
   text-align: center;
+}
+#yellow-bg {
+  background: linear-gradient(#ffee55, #ffc700);
+}
+.Donation,
+.community {
+  text-align: center;
+  align-items: center;
+  padding: 3em;
+  padding-bottom: 7em;
+  color: #0f421a;
+}
+.Donation {
+  padding-bottom: 0;
+}
+.Donation h1,
+button,
+.community h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 1em 3em;
+}
+button {
+  font-size: clamp(10px, 3vw, 40px);
+  padding: 2vw;
+  border-radius: 1rem;
+  background: linear-gradient(120deg, #4ab24f 0%, #4a9a4d 30%, #1e6321 100%);
+  color: #ffee55;
+  border: 2px outset #0a110a;
+}
+.Donation h1,
+.community h1 {
+  font-size: clamp(10px, 4vw, 55px);
+}
+
+input {
+  margin: 0;
+  width: 45%;
+  text-align: left;
+  padding: 2px;
+  padding-left: 2%;
+}
+
+.contact {
+  background-color: #77a2ba;
+}
+.community p,
+#contact-info,
+input {
+  font-size: clamp(1em, 1vw, 100px);
+}
+#contact-info {
+  padding: 2em 0em;
+}
+#contact-info > ul > li,
+#contact-info > ul > li > a {
+  color: #0347cc;
+}
+#last {
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0.1em;
+  border-radius: 1em 1em 0 0;
+  background-color: #ccffc3;
+  color: #565656;
 }
