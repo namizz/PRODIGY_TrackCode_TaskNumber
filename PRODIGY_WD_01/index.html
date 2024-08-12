@@ -23,14 +23,16 @@
         <div id="right">
           <nav>
             <ul>
-              <li id="Donate"><a href=".Donation">Donate</a></li>
-              <li><a href=".home">Home</a></li>
-              <li><a href=".contact">Contact</a></li>
+              <li id="Donate">
+                <a href="#Donation" id="Donate-nav">Donate</a>
+              </li>
+              <li><a href="#home1" id="home-nav">Home</a></li>
+              <li><a href="#contact" id="contact-nav">Contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="home">
+      <div class="home" id="home1">
         <h2>
           Do you know morethan 40% of the world population doesn't eat food 3
           times a day?
@@ -47,7 +49,7 @@
         </p>
         <p>
           Join us in our mission to make the world a better place, one person at
-          a time. <a href=".Donation">Donate</a>
+          a time. <a href="#Donation">Donate</a>
         </p>
       </div>
       <div class="previous-work">
@@ -56,6 +58,7 @@
           <img
             src="https://www.shutterstock.com/image-photo/best-things-life-arent-shot-600nw-2170157763.jpg"
             alt="Build Houses"
+            id = 'image'
           />
           <div id="des">
             <h3>
@@ -64,7 +67,7 @@
             <p>
               In a monumental effort to alleviate housing insecurity and provide
               safe shelters for those in dire need in Africa and Asia.
-              <span>Click here for more information.</span>
+              <span id="more-info">Click here for more information.</span>
             </p>
           </div>
         </div>
@@ -85,7 +88,7 @@
         </div>
       </div>
       <div id="yellow-bg">
-        <div class="Donation">
+        <div class="Donation" id="Donation">
           <h1>If you are willing to help,</h1>
           <div id="buttons">
             <button>Donate in Cash</button>
@@ -99,7 +102,7 @@
           <button id="submit" type="submit">submit</button>
         </div>
       </div>
-      <div class="contact">
+      <div class="contact" id="contact">
         <h3>For more information contact us</h3>
         <div id="contact-info">
           <ul>
@@ -111,5 +114,83 @@
         <h2 id="last">Save one Life</h2>
       </div>
     </main>
+    <div id="moreinfo" class="hidden">
+      <button id="close">x</button>
+      <img
+        src="https://www.shutterstock.com/image-photo/best-things-life-arent-shot-600nw-2170157763.jpg"
+        alt="Build Houses"
+      />
+      <h3>
+        Save One Person Builds 10,000 Houses for Impoverished Communities
+      </h3>
+      <p>
+        In a monumental effort to alleviate housing insecurity and provide
+        safe shelters for those in dire need, Save One Person has
+        successfully completed the construction of 10,000 houses for
+        impoverished individuals and families across several regions. This
+        ambitious project marks a significant milestone in the
+        organization's ongoing commitment to supporting vulnerable
+        populations affected by economic hardship, conflict, and natural
+        disasters. <br />The housing project, initiated in response to the
+        critical need for secure living conditions, has been executed across
+        various regions, including:
+      </p>
+      <p>
+        <h3>1. Sub-Saharan Africa:</h3>
+        - Ethiopia: In the rural regions of Oromia and Tigray, 2,500 houses
+        were constructed, providing secure homes for families displaced by
+        conflict and economic instability.
+        <br />
+        - Kenya: In the arid and semi-arid lands of Turkana and Garissa,
+        1,500 houses were built to support communities grappling with the
+        adverse effects of drought and poverty.
+      </p>
+      <p>
+        <h3>2. South Asia:</h3>
+        - Bangladesh: In the cyclone-prone coastal areas of Khulna and
+        Barisal, 2,000 houses were erected to offer safe havens for families
+        frequently affected by natural disasters.
+        <br />
+        - India: In the flood-prone regions of Bihar and Assam, 1,500 houses
+        were constructed to provide stability for those continuously
+        displaced by seasonal floods.
+      </p>
+      <p>
+        <h3>4. Middle East:</h3>
+
+        - Syria: In war-torn regions such as Aleppo and Idlib, 1,500 houses
+        were constructed to offer shelter and a sense of normalcy to
+        families affected by the ongoing conflict.
+      </p>
+      <p>
+        Save One Person's housing project has been a beacon of hope for
+        many, providing not just physical shelters but also fostering a
+        sense of community and stability. The organization collaborated with
+        local governments, international aid agencies, and community leaders
+        to ensure the houses were built to suit the specific needs and
+        conditions of each region.
+        <br />
+
+        Each house was designed with durability and sustainability in mind,
+        utilizing locally sourced materials and incorporating
+        environmentally friendly practices. The construction process also
+        created job opportunities for local residents, further contributing
+        to the economic development of the areas involved.
+        <br />
+
+        The beneficiaries of this project have expressed immense gratitude
+        for the life-changing support. For many, these new homes represent a
+        fresh start and the promise of a better future.
+        <br />
+
+        Save One Person remains dedicated to its mission of providing
+        essential aid to those in need. This housing project is a testament
+        to what can be achieved through collective effort and compassionate
+        action. The organization continues to seek support and partnerships
+        to expand its reach and impact, striving to build a world where
+        everyone has the opportunity to live in safety and dignity.
+      </p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
