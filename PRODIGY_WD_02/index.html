@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="timer">
+        <table id="lap">
+          <thead>
+            <tr>
+              <th>lap</th>
+              <th>lap time</th>
+              <th>overall time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>00:00:00.00</td>
+              <td>00:00:00.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <h1 id="time">
+          <span id="hour">00:</span><span id="minute">00:</span
+          ><span id="second">00</span> <span id="microsecond">.00</span>
+        </h1>
+        <p id="lap-timer"><span id="lap-hour">00:</span>00:00.0</p>
+      </div>
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="lap-button">Lap</button>
+      </div>
+    </main>
+  </body>
+</html>
