@@ -17,24 +17,37 @@
               <th>overall time</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>00:00:00.00</td>
-              <td>00:00:00.00</td>
-            </tr>
+          <tbody id="record-lap-r">
+            <tr></tr>
           </tbody>
         </table>
         <h1 id="time">
-          <span id="hour">00:</span><span id="minute">00:</span
-          ><span id="second">00</span> <span id="microsecond">.00</span>
+          <span id="hour">00</span><span id="minute">00</span>:<span id="second"
+            >00</span
+          ><span id="dot">.</span><span id="microsecond">00</span>
         </h1>
-        <p id="lap-timer"><span id="lap-hour">00:</span>00:00.0</p>
+        <p id="lap-timer">
+          <span id="lap-hour">00</span>:<span id="lap-min">00</span>:<span
+            id="lap-sec"
+            >00</span
+          >.<span id="lap-micro">00</span>
+        </p>
       </div>
       <div class="buttons">
         <button id="start">Start</button>
         <button id="lap-button">Lap</button>
       </div>
+      <table id="lap" class="hide">
+        <thead>
+          <tr>
+            <th>lap</th>
+            <th>lap time</th>
+            <th>overall time</th>
+          </tr>
+        </thead>
+        <tbody id="record-lap"></tbody>
+      </table>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

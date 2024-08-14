@@ -19,10 +19,12 @@ main {
   border-radius: 4vw;
   padding: 1em 0em 3em 0em;
 }
-table {
+.hide {
   display: none;
+}
+#lap {
   width: 40vw;
-  margin: 1vh auto;
+  margin: 2vh auto;
 }
 th {
   color: #966b6b;
@@ -35,16 +37,22 @@ th {
 td {
   color: rgba(255, 255, 255, 0.65);
 }
-#second,
-#minute {
+#time {
   font-size: 10vw;
 }
 #hour {
   display: none;
   font-size: 8vw;
 }
-p,
-p span {
+#microsecond,
+#dot {
+  font-size: 4vw;
+}
+#lap-timer {
+  display: none;
+}
+#lap-timer,
+#lap-timer span {
   color: rgba(255, 255, 255, 0.65);
   font-size: 2.5vh;
 }
@@ -52,8 +60,9 @@ p span {
   margin: 1vw 0;
 }
 button {
+  width: 7em;
   margin: 5vw;
-  padding: 0.7em 2.5em;
+  padding: 0.7em 0;
   color: #000;
   font-size: 0.9em;
 }
