@@ -56,10 +56,32 @@ table {
 .bottomright {
   border-radius: 0vw 0 6vw 0;
 }
-
-.menu {
-  display: none;
+#player {
+  color: #d0b97a;
+  text-align: center;
+  font-size: 1.7vw;
+  padding: 1.5vw;
+}
+#computer {
+  padding: 1.5vw;
+  background-color: rgba(26, 194, 206, 0.116);
+  border-radius: 10px 0 0 10px;
+}
+#twoplayer {
+  padding: 1.5vw;
+  border-radius: 0px 10px 10px 0px;
 }
 button {
-  margin: 0 48%;
+  margin: 1% 46%;
+  background-color: rgb(255, 213, 74);
+  padding: 0.3vw 1.5vw;
+  font-size: 2vw;
+}
+@media (min-width: 1500px) {
+  main {
+    margin: 1% auto;
+  }
+  table {
+    margin: 1vw auto;
+  }
 }

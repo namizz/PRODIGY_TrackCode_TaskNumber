@@ -8,25 +8,40 @@ var ticTac;
 let counterClick = 0;
 const player1 = "O";
 const player2 = "X";
-var p1 = "Player 1";
-var p2 = "Player 2";
+var p1 = "You";
 var p2 = "Computer";
 
 const cells = document.querySelectorAll(".cell");
 const start = document.querySelector("button");
 const text = document.querySelector("#winner");
+const computerPlayer = document.querySelector("#computer");
+const Twoplayer = document.querySelector("#twoplayer");
+const playerOption = document.querySelector("#player");
+
 let started = false;
+computerPlayer.addEventListener("click", choosePlayer);
+Twoplayer.addEventListener("click", choosePlayer);
 
 function startGame() {
-  ticTac = Array.from(Array(10).keys());
-  cells.forEach((cell) => {
-    cell.textContent = "";
-    cell.addEventListener("click", mark);
-  });
-  started = true;
-  counterClick = 0;
-  start.style.display = "none";
-  text.textContent = "";
+  if (start.textContent == "Over") {
+    result(winnerOfGame());
+    text.textContent = "";
+    const option = [null, "O", "X"];
+    cells.forEach((cell) => {
+      cell.textContent = option[Math.floor(Math.random() * option.length)];
+    });
+  } else {
+    ticTac = Array.from(Array(10).keys());
+    cells.forEach((cell) => {
+      cell.textContent = "";
+      cell.addEventListener("click", mark);
+    });
+    started = true;
+    counterClick = 0;
+    start.textContent = "Over";
+    playerOption.style.display = "none";
+    text.textContent = "";
+  }
 }
 function mark(square) {
   let clickedbutt = square.target.id;
@@ -79,6 +94,7 @@ function winnerOfGame() {
 function result(winner) {
   start.style.display = "block";
   start.textContent = "Restart";
+  playerOption.style.display = "block";
   started = false;
   winner
     ? (text.textContent = `${winner} won the game`)
@@ -96,4 +112,19 @@ function Ai() {
   ticTac[computerMark] = player2;
   console.log(ticTac, computerMark);
   document.getElementById(`${computerMark}`).textContent = player2;
+}
+
+function choosePlayer(e) {
+  console.log(e.target);
+  if (e.target == computerPlayer) {
+    p1 = "You";
+    p2 = "Computer";
+    computerPlayer.style.backgroundColor = "rgba(26, 194, 206, 0.116)";
+    Twoplayer.style.backgroundColor = "transparent";
+  } else if (e.target == Twoplayer) {
+    p1 = "Player 1";
+    p2 = "Player 2";
+    computerPlayer.style.backgroundColor = "transparent";
+    Twoplayer.style.backgroundColor = "rgba(26, 194, 206, 0.116)";
+  }
 }
