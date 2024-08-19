@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: cursive;
+}
+:root {
+  --border-color: rgb(253, 255, 221);
+  --glow1: #647dc2;
+  --glow2: #d390e4;
+}
+html {
+  background: radial-gradient(#323257, #161627);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  margin: 5% auto;
+}
+h1 {
+  font-size: 4vw;
+  color: white;
+  text-align: center;
+}
+table {
+  margin: 3vw auto;
+  align-items: center;
+  border: 0.2vw solid var(--border-color);
+  border-radius: 6vw;
+  background-color: white;
+  box-shadow: 0 0 1vw var(--glow1), 0 0 25px var(--glow1);
+}
+.cell {
+  /*border style*/
+  background: radial-gradient(#303052, #272742);
+  width: clamp(20px, 10vw, 160px);
+  height: clamp(20px, 9.3vw, 150px);
+  box-shadow: inset 0 0 1vw var(--glow1);
+  border: 0.2vw solid var(--border-color);
+  /*inner text style*/
+  font-size: 5vw;
+  text-align: center;
+  color: var(--border-color);
+  text-shadow: 0 0 1vw var(--glow2), 0 0 3vw var(--glow2);
+}
+
+.topleft {
+  border-radius: 6vw 0 0 0;
+}
+.topright {
+  border-radius: 0vw 6vw 0 0;
+}
+.bottomleft {
+  border-radius: 0vw 0 0 6vw;
+}
+.bottomright {
+  border-radius: 0vw 0 6vw 0;
+}
+
+.menu {
+  display: none;
+}
+button {
+  margin: 0 48%;
+}
