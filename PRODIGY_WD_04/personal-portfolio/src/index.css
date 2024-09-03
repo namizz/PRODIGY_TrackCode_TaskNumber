@@ -37,3 +37,72 @@ li {
 img {
   width: clamp(30px, 40%, 550px);
 }
+#intro {
+  margin: auto 0;
+  padding: 7vw;
+  align-items: center;
+}
+p {
+  font-size: clamp(10px, 1.8vw, 25px);
+}
+h1 {
+  padding: 1vw;
+  margin-bottom: 0.2em;
+  font-size: clamp(20px, 3.5vw, 50px);
+  text-align: center;
+}
+#image {
+  border-radius: 20em 0em 0 20em;
+  border: 10px solid #fff;
+  border-style: double;
+}
+/*Skills and Experience*/
+#skills {
+  padding: 2vw;
+}
+#major-skills,
+#minor-skills {
+  display: flex;
+  text-align: center;
+}
+#major-skills > #logo > img,
+#minor-skills > #logo > img {
+  width: clamp(10px, 7vw, 5em);
+  margin: 1vw;
+  margin-bottom: 0;
+}
+h2 {
+  padding: 1vw 4vw;
+  text-decoration: underline;
+}
+
+.Experience {
+  padding: 3vw 11vw;
+}
+#e-description {
+  display: flex;
+}
+.Experience > #e-description > img {
+  width: 10vw;
+  border-radius: 100em;
+}
+#e-description > p {
+  margin: auto 0.5em;
+  font-size: clamp(10px, 2vw, 2em);
+}
+h3,
+h2 {
+  font-size: clamp(10px, 2.5vw, 2em);
+}
+
+@media (min-width: 1600px) {
+  #intro {
+    padding: 0 18vw;
+  }
+  p {
+    font-size: clamp(10px, 2vw, 25px);
+  }
+  h1 {
+    font-size: clamp(20px, 5vw, 50px);
+  }
+}
