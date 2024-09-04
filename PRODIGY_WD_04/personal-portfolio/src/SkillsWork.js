@@ -45,11 +45,6 @@ export default function Skills() {
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
           alt="SQL"
         />
-
-        <Logos
-          src="https://cdn-icons-png.flaticon.com/512/3381/3381536.png"
-          alt="DSA"
-        />
       </div>
     );
   };
@@ -73,6 +68,7 @@ export default function Skills() {
     return (
       <div>
         <h1>Skills</h1>
+        <hr />
         <div id="skills">
           <div>
             <h2>Major Skills</h2>
@@ -90,6 +86,7 @@ export default function Skills() {
     return (
       <div id="experience-card">
         <h1>Experience</h1>
+        <hr />
         <Experience
           role="Internship in Prodigy InfoTech Company"
           image="https://avatars.githubusercontent.com/u/130365840?s=280&v=4"
@@ -104,21 +101,48 @@ export default function Skills() {
     return (
       <div id="projects">
         <h1>My Works</h1>
+        <hr />
         <div id="project-frame">
           <Project
-            projectName="Pokomen"
-            projectImage="../src/images/Screenshot (2).png"
+            projectName="Get Pokomen"
+            projectImage="https://github.com/namizz/PRODIGY_TrackCode_TaskNumber/blob/main/PRODIGY_WD_04/personal-portfolio/src/images/Screenshot%20(2).png?raw=true"
             projectLink="https://github.com/namizz/Pokemon"
+          />
+          <Project
+            projectName="Scientific Calculator"
+            projectImage="https://github.com/namizz/PRODIGY_TrackCode_TaskNumber/blob/main/PRODIGY_WD_04/personal-portfolio/src/images/Screenshot%20(3).png?raw=true"
+            projectLink="https://github.com/namizz/Scientfic-Calculator-in-java"
+          />
+          <Project
+            projectName="Meme Generator"
+            projectImage="https://github.com/namizz/PRODIGY_TrackCode_TaskNumber/blob/main/PRODIGY_WD_04/personal-portfolio/src/images/Screenshot%20(4).png?raw=true"
+            projectLink="https://github.com/namizz/Meme-Generator-React-app-"
+          />
+          <Project
+            projectName="Tic-Tac-Toe Game"
+            projectImage="https://github.com/namizz/PRODIGY_TrackCode_TaskNumber/blob/main/PRODIGY_WD_04/personal-portfolio/src/images/Screenshot%20(5).png?raw=true"
+            projectLink="https://github.com/namizz/PRODIGY_TrackCode_TaskNumber/tree/main/PRODIGY_WD_03"
+          />
+          <Project
+            projectName="Beat Box"
+            projectImage="https://github.com/namizz/PRODIGY_TrackCode_TaskNumber/blob/main/PRODIGY_WD_04/personal-portfolio/src/images/Screenshot%20(6).png?raw=true"
+            projectLink="https://github.com/namizz/Beat-Box"
           />
         </div>
       </div>
     );
   };
+  const Transtion = function () {
+    return <div id="transtion"></div>;
+  };
   return (
     <div>
-      <SkillBody />
-      <AllExperience />
-      <MyWork />
+      <div className="sew">
+        <SkillBody />
+        <AllExperience />
+        <MyWork />
+      </div>
+      <Transtion />
     </div>
   );
 }

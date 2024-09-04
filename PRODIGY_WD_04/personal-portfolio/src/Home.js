@@ -6,7 +6,9 @@ export default function Home() {
   const AboutMe = function () {
     return (
       <div id="intro">
-        <h1>Hey there, I'm Naomi Zerfu</h1>
+        <h1>
+          Hey there, I'm <span>Naomi Zerfu</span>
+        </h1>
         <p>
           a passionate junior <span>front-end developer</span> with a keen eye
           for detail. I specialize in HTML, CSS, JavaScript, and React, crafting
