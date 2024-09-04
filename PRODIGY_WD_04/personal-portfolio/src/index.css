@@ -4,10 +4,14 @@
   color: #fffffff3;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 /*Navogation bar*/
 #navbar {
+  top: 0;
   background: linear-gradient(5deg, #1a1b38, #14132c 30%);
+  position: fixed;
+  width: 100%;
 }
 ul {
   display: flex;
@@ -38,6 +42,7 @@ li {
 .home-body {
   display: flex;
   background: linear-gradient(#14132c 0%, #14132c 90%, #121214 98%);
+  margin-top: 4.5vw;
 }
 span {
   color: #9a97e6;
@@ -150,7 +155,7 @@ a > h3 {
 #contact {
   background-color: rgba(10, 16, 29, 0.876);
   text-align: center;
-  height: 100vh;
+
   padding: 2em;
 }
 #contact h2 {

@@ -4,9 +4,15 @@ export default function NavBar() {
   return (
     <div id="navbar">
       <ul>
-        <li>Home</li>
-        <li id="project">Projects</li>
-        <li>Contact</li>
+        <li>
+          <a href="#home-body">Home</a>
+        </li>
+        <li id="project">
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </div>
   );
