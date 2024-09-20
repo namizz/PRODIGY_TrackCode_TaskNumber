@@ -121,7 +121,7 @@ export default function Skills() {
           <Project
             projectName="Tic-Tac-Toe Game"
             projectImage="https://github.com/namizz/PRODIGY_TrackCode_TaskNumber/blob/main/PRODIGY_WD_04/personal-portfolio/src/images/Screenshot%20(5).png?raw=true"
-            projectLink="https://github.com/namizz/PRODIGY_TrackCode_TaskNumber/tree/main/PRODIGY_WD_03"
+            projectLink="https://namizz.github.io/PRODIGY_TrackCode_TaskNumber/PRODIGY_WD_03/"
           />
           <Project
             projectName="Beat Box"
